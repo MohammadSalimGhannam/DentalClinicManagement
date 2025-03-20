@@ -85,6 +85,7 @@ function App() {
             <Route path="/CurrentPatient" element={<CurrentPatient  patients={patients.filter((p) => p.status === "In Treatment")}
                                                                     onDelete={handleDelete}/>} />
             <Route path="/Reservation" element={<Reservation />} />
+            <Route path="/DentalClinicManagement" element={<Reservation />} />
             <Route path="*" element={<Reservation />} />
           </Routes>
         </Container>
