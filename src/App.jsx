@@ -27,7 +27,7 @@ function App() {
   const windowWidth = useContext(WindowSizeContext);
 
   useEffect(() => {
-    fetch(import.meta.env.BASE_URL + "data.json")
+    fetch(import.meta.env.BASE_URL + "/data.json")
       .then((response) => response.json())
       .then((data) => setPatients(data.patients))
       .catch((error) => console.error("Error fetching data:", error));
